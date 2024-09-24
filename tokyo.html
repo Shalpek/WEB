@@ -10,10 +10,11 @@
 <body>
     <header id="main-header">
         <h1>Добро пожаловать в Токио</h1>
+
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    Другие города
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
@@ -40,23 +41,39 @@
 
         <section>
             <h2>Достопримечательности</h2>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1555883006-0f5a0915a80f?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tokyo Skytree">
-                <figcaption>Токийская башня SkyTree — одна из самых высоких башен в мире</figcaption>
-            </figure>
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1555883006-0f5a0915a80f?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.kcpinternational.com/wp-content/uploads/2012/02/Tokyo-Imperial-Palace.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.zicasso.com/static/4dcb9bdc5a33352dd2fcf93632c0cb1b/28a23/4dcb9bdc5a33352dd2fcf93632c0cb1b.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
             <div class="container">
                 <div class="col">
+                    <div class="row border-custom m-2 p-2">
+                        <p>Токийская башня SkyTree</p>
+                    </div>
                     <div class="row border-custom m-2 p-2">
                         <p>Императорский дворец</p>
                     </div>
                     <div class="row border-custom m-2 p-2">
                         <p>Сенсо-дзи (Senso-ji) — старейший буддийский храм</p>
-                    </div>
-                    <div class="row border-custom m-2 p-2">
-                        <p>Токийский национальный музей</p>
-                    </div>
-                    <div class="row border-custom m-2 p-2">
-                        <p>Акихабара — район электроники и аниме-культуры</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +104,7 @@
                 <label for="comment">Ваш отзыв:</label>
                 <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
 
-                <input type="submit" value="Отправить">
+                <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
         </section>
 
@@ -97,9 +114,17 @@
         </section>
     </main>
 
-    <footer>
-        <p>Авторы: Баймурзин Бахтияр, Куралай Тельгарина</p>
-    </footer>
+    <div class="card">
+        <div class="card-header">
+            Цитата
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote">
+                <p>"Чтобы построить что-то по-настоящему новое, нужно умело сочетать традиции с современными технологиями."</p>
+                <footer class="blockquote-footer">Авторы: <cite title="Source Title">Баймурзин Бахтияр, Куралай Тельгарина</cite></footer>
+            </blockquote>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
