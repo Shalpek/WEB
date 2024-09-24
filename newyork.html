@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нью-Йорк - Путеводитель</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Добро пожаловать в Нью-Йорк</h1>
+        <nav>
+            <ul>
+                <li><a href="almaty.html" class="almaty">Алматы</a></li>
+                <li><a href="paris.html" class="paris">Париж</a></li>
+                <li><a href="tokyo.html" class="tokyo">Токио</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Общие сведения о Нью-Йорке</h2>
+            <p>Нью-Йорк — крупнейший город США и один из важнейших мировых центров моды, культуры, бизнеса и развлечений. Город известен своими небоскребами и оживленной городской жизнью.</p>
+        </section>
+
+        <section>
+            <h2>Достопримечательности</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1555096080-d6601d788482?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Статуя Свободы">
+                <figcaption>Статуя Свободы — символ свободы и демократии</figcaption>
+            </figure>
+            <ul>
+                <li>Эмпайр-стейт-билдинг</li>
+                <li>Центральный парк</li>
+                <li>Таймс-сквер</li>
+                <li>Музей современного искусства</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Советы путешественникам</h2>
+            <p>Лучшее время для посещения Нью-Йорка — осень или весна, когда погода наиболее комфортна для прогулок по городу. Не забудьте попробовать уличную еду, такую как хот-доги или бейглы.</p>
+        </section>
+
+        <section>
+            <h2>Оставьте ваш отзыв о поездке в Нью-Йорк</h2>
+            <form action="#" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Оцените поездку:</label>
+                <select id="rating" name="rating">
+                    <option value="отлично">Отлично</option>
+                    <option value="хорошо">Хорошо</option>
+                    <option value="средне">Средне</option>
+                    <option value="плохо">Плохо</option>
+                </select><br>
+
+                <label for="comment">Ваш отзыв:</label>
+                <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+
+        <section>
+            <h2>Карта Нью-Йорка</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.849874928112!2d-74.00601571616385!3d40.71272810087767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb0a867%3A0x1fcfa57716d43d25!2z0JTQu9C10YDQvdGL0Lkg0YbQtdC90YLRgNCw!5e0!3m2!1sru!2skz!4v1637930057616!5m2!1sru!2skz" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Авторы: Баймурзин Бахтияр, Куралай Тельгарина</p>
+    </footer>
+</body>
+</html>

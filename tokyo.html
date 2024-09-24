@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Токио - Путеводитель</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Добро пожаловать в Токио</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-4">
+                            <a class="nav-link" href="almaty.html">Almaty</a>
+                        </li>
+                        <li class="nav-item m-4">
+                            <a class="nav-link" href="paris.html">Paris</a>
+                        </li>
+                        <li class="nav-item m-4">
+                            <a class="nav-link" href="newyork.html">New-york</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Общие сведения о Токио</h2>
+            <p>Токио — столица Японии и один из самых больших мегаполисов мира. Город сочетает в себе древние традиции и ультрасовременные технологии, создавая уникальный опыт для каждого посетителя.</p>
+        </section>
+
+        <section>
+            <h2>Достопримечательности</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1555883006-0f5a0915a80f?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tokyo Skytree">
+                <figcaption>Токийская башня SkyTree — одна из самых высоких башен в мире</figcaption>
+            </figure>
+            <div class="container">
+                <div class="col">
+                    <div class="row border-custom m-2 p-2">
+                        <p>Императорский дворец</p>
+                    </div>
+                    <div class="row border-custom m-2 p-2">
+                        <p>Сенсо-дзи (Senso-ji) — старейший буддийский храм</p>
+                    </div>
+                    <div class="row border-custom m-2 p-2">
+                        <p>Токийский национальный музей</p>
+                    </div>
+                    <div class="row border-custom m-2 p-2">
+                        <p>Акихабара — район электроники и аниме-культуры</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Советы путешественникам</h2>
+            <p>Токио можно посещать круглый год, но весной здесь особенно красиво благодаря цветению сакуры. Используйте общественный транспорт для удобства передвижения, а также обязательно попробуйте суши и рамен в местных ресторанах.</p>
+        </section>
+
+        <section>
+            <h2>Оставьте ваш отзыв о поездке в Токио</h2>
+            <form action="#" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Оцените поездку:</label>
+                <select id="rating" name="rating">
+                    <option value="отлично">Отлично</option>
+                    <option value="хорошо">Хорошо</option>
+                    <option value="средне">Средне</option>
+                    <option value="плохо">Плохо</option>
+                </select><br>
+
+                <label for="comment">Ваш отзыв:</label>
+                <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+
+        <section>
+            <h2>Карта Токио</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.869896647305!2d139.7527061341616!3d35.689487080424906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bf94da7e24d%3A0xe82f7e86f7b9a010!2z0KPQvdC40LLQtdGC!5e0!3m2!1sru!2skz!4v1637930057616!5m2!1sru!2skz" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Авторы: Баймурзин Бахтияр, Куралай Тельгарина</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
